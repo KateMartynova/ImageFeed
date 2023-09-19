@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518D523E2AB8958C00815365 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D523D2AB8958C00815365 /* UIColor+Extensions.swift */; };
 		51ADDA552A9DDEA1009779F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADDA542A9DDEA1009779F4 /* AppDelegate.swift */; };
 		51ADDA572A9DDEA1009779F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADDA562A9DDEA1009779F4 /* SceneDelegate.swift */; };
 		51ADDA592A9DDEA1009779F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADDA582A9DDEA1009779F4 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		518D523D2AB8958C00815365 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		51ADDA512A9DDEA1009779F4 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ADDA542A9DDEA1009779F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51ADDA562A9DDEA1009779F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518D523F2AB895A400815365 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				518D523D2AB8958C00815365 /* UIColor+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		51ADDA482A9DDEA1009779F4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +66,13 @@
 		51ADDA532A9DDEA1009779F4 /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
+				518D523F2AB895A400815365 /* Helpers */,
 				51ADDA542A9DDEA1009779F4 /* AppDelegate.swift */,
 				51ADDA562A9DDEA1009779F4 /* SceneDelegate.swift */,
 				51ADDA582A9DDEA1009779F4 /* ViewController.swift */,
 				51ADDA5A2A9DDEA1009779F4 /* Main.storyboard */,
-				51ADDA5D2A9DDEA2009779F4 /* Assets.xcassets */,
 				51ADDA5F2A9DDEA2009779F4 /* LaunchScreen.storyboard */,
+				51ADDA5D2A9DDEA2009779F4 /* Assets.xcassets */,
 				51ADDA622A9DDEA2009779F4 /* Info.plist */,
 			);
 			path = ImageFeed;
@@ -141,6 +152,7 @@
 				51ADDA592A9DDEA1009779F4 /* ViewController.swift in Sources */,
 				51ADDA552A9DDEA1009779F4 /* AppDelegate.swift in Sources */,
 				51ADDA572A9DDEA1009779F4 /* SceneDelegate.swift in Sources */,
+				518D523E2AB8958C00815365 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
