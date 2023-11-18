@@ -189,11 +189,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-Kc-g5S">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJS-UA-Ce7">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Ii-gxM">
-                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-Kc-g5S">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="132"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dnt-Kc-g5S" firstAttribute="leading" secondItem="qJS-UA-Ce7" secondAttribute="leading" id="7Zk-vi-YBY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dnt-Kc-g5S" secondAttribute="trailing" id="RGd-dh-G1U"/>
+                                    <constraint firstItem="Dnt-Kc-g5S" firstAttribute="top" secondItem="qJS-UA-Ce7" secondAttribute="top" id="dky-Ub-lxl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dnt-Kc-g5S" secondAttribute="bottom" id="p3l-Fz-C4e"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1b1-aZ-3wz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kg1-nu-Vfm"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hiV-HO-P3w" id="5hU-sm-ZiC"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Ii-gxM">
+                                <rect key="frame" x="8" y="8" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="Uk3-f9-KxK"/>
                                     <constraint firstAttribute="height" constant="48" id="WtN-B1-QIG"/>
@@ -204,32 +220,48 @@
                                     <action selector="didTapBackButton" destination="hiV-HO-P3w" eventType="touchUpInside" id="XFH-SW-KHo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax2-kS-RAg">
+                                <rect key="frame" x="171.66666666666666" y="766" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2Va-cP-fJP"/>
+                                    <constraint firstAttribute="height" constant="50" id="o44-sq-LSH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Image"/>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="hiV-HO-P3w" eventType="touchUpInside" id="Jn4-UD-mON"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SSA-MH-nac"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
-                            <constraint firstItem="Dnt-Kc-g5S" firstAttribute="leading" secondItem="2rE-lm-mA6" secondAttribute="leading" id="NHY-2m-jrg"/>
-                            <constraint firstItem="hfb-Ii-gxM" firstAttribute="top" secondItem="SSA-MH-nac" secondAttribute="top" constant="8" id="VgW-cZ-hwd"/>
-                            <constraint firstAttribute="bottom" secondItem="Dnt-Kc-g5S" secondAttribute="bottom" id="XDS-WD-G6z"/>
-                            <constraint firstAttribute="trailing" secondItem="Dnt-Kc-g5S" secondAttribute="trailing" id="dWp-vt-Ozg"/>
-                            <constraint firstItem="Dnt-Kc-g5S" firstAttribute="top" secondItem="2rE-lm-mA6" secondAttribute="top" id="k1F-TJ-mTh"/>
-                            <constraint firstItem="hfb-Ii-gxM" firstAttribute="leading" secondItem="SSA-MH-nac" secondAttribute="leading" constant="8" id="uj6-hV-KMM"/>
+                            <constraint firstItem="SSA-MH-nac" firstAttribute="trailing" secondItem="qJS-UA-Ce7" secondAttribute="trailing" id="43V-n6-WTG"/>
+                            <constraint firstItem="hfb-Ii-gxM" firstAttribute="leading" secondItem="SSA-MH-nac" secondAttribute="leading" constant="8" id="4tD-qE-wqW"/>
+                            <constraint firstItem="qJS-UA-Ce7" firstAttribute="top" secondItem="2rE-lm-mA6" secondAttribute="top" id="BCh-Pl-Vsm"/>
+                            <constraint firstItem="hfb-Ii-gxM" firstAttribute="top" secondItem="SSA-MH-nac" secondAttribute="top" constant="8" id="SST-dS-1wZ"/>
+                            <constraint firstItem="SSA-MH-nac" firstAttribute="bottom" secondItem="ax2-kS-RAg" secondAttribute="bottom" constant="36" id="ZjM-MY-gAu"/>
+                            <constraint firstItem="ax2-kS-RAg" firstAttribute="centerX" secondItem="SSA-MH-nac" secondAttribute="centerX" id="he9-Ju-qyg"/>
+                            <constraint firstItem="qJS-UA-Ce7" firstAttribute="leading" secondItem="SSA-MH-nac" secondAttribute="leading" id="tn5-QM-Gcm"/>
+                            <constraint firstAttribute="bottom" secondItem="qJS-UA-Ce7" secondAttribute="bottom" id="xcE-Ru-kZn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sby-jP-ijp"/>
                     <connections>
-                        <outlet property="imageView" destination="Dnt-Kc-g5S" id="NKt-WH-3zE"/>
+                        <outlet property="imageView" destination="Dnt-Kc-g5S" id="C1l-Nr-qb8"/>
+                        <outlet property="scrollView" destination="qJS-UA-Ce7" id="a4H-yl-71I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSa-cR-QQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="-251"/>
+            <point key="canvasLocation" x="-16.030534351145036" y="-251.40845070422537"/>
         </scene>
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
         <image name="Backward" width="24" height="24"/>
         <image name="Exit" width="44" height="44"/>
+        <image name="Image" width="50.333332061767578" height="50"/>
         <image name="like_active" width="44" height="44"/>
         <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
