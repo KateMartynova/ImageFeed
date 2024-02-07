@@ -9,13 +9,13 @@ class ProfileViewController: UIViewController {
     }
     
     
-    private var loginButton: UIButton? {
+    private var exitButton: UIButton? {
         let button = UIButton.systemButton(
             with: UIImage(systemName: "ipad.and.arrow.forward")!,
             target: self,
             action: nil
         )
-        button.tintColor = .red
+        button.tintColor = .ypRed
         return button
     }
     
@@ -51,9 +51,9 @@ class ProfileViewController: UIViewController {
         userPic.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(userPic)
         
-        guard let loginButton = loginButton else { return }
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(loginButton)
+        guard let exitButton = exitButton else { return }
+        exitButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(exitButton)
         
         guard let userName = userName else { return }
         userName.translatesAutoresizingMaskIntoConstraints = false
@@ -73,10 +73,10 @@ class ProfileViewController: UIViewController {
             userPic.widthAnchor.constraint(equalToConstant: 70),
             userPic.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32),
             userPic.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            loginButton.heightAnchor.constraint(equalToConstant: 24),
-            loginButton.widthAnchor.constraint(equalToConstant: 24),
-            loginButton.centerYAnchor.constraint(equalTo: userPic.centerYAnchor),
-            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
+            exitButton.heightAnchor.constraint(equalToConstant: 44),
+            exitButton.widthAnchor.constraint(equalToConstant: 44),
+            exitButton.centerYAnchor.constraint(equalTo: userPic.centerYAnchor),
+            exitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             userName.leadingAnchor.constraint(equalTo: userPic.leadingAnchor),
             userName.topAnchor.constraint(equalTo: userPic.bottomAnchor, constant: 8),
             userNickName.leadingAnchor.constraint(equalTo: userPic.leadingAnchor),
