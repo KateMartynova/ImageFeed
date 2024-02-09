@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44BB1CD82B76738800C79E9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB1CD72B76738800C79E9F /* Constants.swift */; };
 		44DBC8F62B681B8D00AF2EF8 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44DBC8F42B681B8D00AF2EF8 /* YS Display-Medium.ttf */; };
 		44DBC8F72B681B8D00AF2EF8 /* YS Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44DBC8F52B681B8D00AF2EF8 /* YS Display-Bold.ttf */; };
 		518D523E2AB8958C00815365 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D523D2AB8958C00815365 /* UIColor+Extensions.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44BB1CD72B76738800C79E9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44DBC8F42B681B8D00AF2EF8 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		44DBC8F52B681B8D00AF2EF8 /* YS Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Bold.ttf"; sourceTree = "<group>"; };
 		518D523D2AB8958C00815365 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				51ADDA562A9DDEA1009779F4 /* SceneDelegate.swift */,
 				51ADDA5A2A9DDEA1009779F4 /* Main.storyboard */,
 				518D52472ACC26F800815365 /* SingleImageViewController.swift */,
+				44BB1CD72B76738800C79E9F /* Constants.swift */,
 				51ADDA622A9DDEA2009779F4 /* Info.plist */,
 				44DBC8E92B619F9A00AF2EF8 /* Resources */,
 			);
@@ -197,6 +200,7 @@
 				518D52422AB9D1D400815365 /* ImagesListCell.swift in Sources */,
 				51ADDA572A9DDEA1009779F4 /* SceneDelegate.swift in Sources */,
 				518D523E2AB8958C00815365 /* UIColor+Extensions.swift in Sources */,
+				44BB1CD82B76738800C79E9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
