@@ -27,10 +27,10 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxQ-5S-Nfr">
-                                <rect key="frame" x="9" y="11" width="48" height="48"/>
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="2qb-Iu-eMq"/>
-                                    <constraint firstAttribute="width" constant="48" id="SJl-r1-FNT"/>
+                                    <constraint firstAttribute="height" constant="44" id="2qb-Iu-eMq"/>
+                                    <constraint firstAttribute="width" constant="64" id="SJl-r1-FNT"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="nav_back_button"/>
@@ -38,19 +38,28 @@
                                     <action selector="didTapBackButton:" destination="eiS-rN-gqv" eventType="touchUpInside" id="q9R-2l-cII"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gEU-gg-hJB">
+                                <rect key="frame" x="0.0" y="44" width="393" height="4"/>
+                                <color key="progressTintColor" name="YP Black"/>
+                                <color key="trackTintColor" name="YP White"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BDl-gZ-xXn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="C4d-hO-uRZ" secondAttribute="trailing" id="8Rt-kr-T8a"/>
-                            <constraint firstItem="OxQ-5S-Nfr" firstAttribute="top" secondItem="BDl-gZ-xXn" secondAttribute="top" constant="11" id="Bjz-vM-Lz2"/>
-                            <constraint firstItem="OxQ-5S-Nfr" firstAttribute="leading" secondItem="BDl-gZ-xXn" secondAttribute="leading" constant="9" id="d2s-dn-juQ"/>
+                            <constraint firstItem="OxQ-5S-Nfr" firstAttribute="top" secondItem="BDl-gZ-xXn" secondAttribute="top" id="Bjz-vM-Lz2"/>
+                            <constraint firstItem="gEU-gg-hJB" firstAttribute="top" secondItem="OxQ-5S-Nfr" secondAttribute="bottom" id="UGA-kx-Uw2"/>
+                            <constraint firstItem="gEU-gg-hJB" firstAttribute="trailing" secondItem="0DF-QA-xLC" secondAttribute="trailing" id="UwR-wl-7K5"/>
+                            <constraint firstItem="OxQ-5S-Nfr" firstAttribute="leading" secondItem="BDl-gZ-xXn" secondAttribute="leading" id="d2s-dn-juQ"/>
+                            <constraint firstItem="gEU-gg-hJB" firstAttribute="leading" secondItem="0DF-QA-xLC" secondAttribute="leading" id="jjO-xO-BTC"/>
                             <constraint firstItem="C4d-hO-uRZ" firstAttribute="top" secondItem="0DF-QA-xLC" secondAttribute="top" id="n2B-Vz-JEJ"/>
                             <constraint firstAttribute="bottom" secondItem="C4d-hO-uRZ" secondAttribute="bottom" id="txy-pW-6Fb"/>
                             <constraint firstItem="C4d-hO-uRZ" firstAttribute="leading" secondItem="0DF-QA-xLC" secondAttribute="leading" id="xBI-gX-YH4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressView" destination="gEU-gg-hJB" id="Vep-Ku-AKZ"/>
                         <outlet property="webView" destination="C4d-hO-uRZ" id="ChX-EB-bfM"/>
                     </connections>
                 </viewController>

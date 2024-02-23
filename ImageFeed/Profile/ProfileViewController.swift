@@ -67,7 +67,7 @@ class ProfileViewController: UIViewController {
         text.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(text)
         
-        
+    
         NSLayoutConstraint.activate([
             userPic.heightAnchor.constraint(equalToConstant: 70),
             userPic.widthAnchor.constraint(equalToConstant: 70),
